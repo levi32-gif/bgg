@@ -1,0 +1,71 @@
+<html lang="HU">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Űrlapelemek</title>
+</head>
+<body>
+    <form>
+        <h1>Űrlapelemek</h1>
+        Egysoros szövegbevitel<br>
+        <input type="text" name="szovegdoboz" size="20"><br>
+        <br>
+        Többsoros szövegbevitel<br>
+        <textarea rows="4" cols="20" name="szoveg"></textarea><br>
+
+        Jelszóbevitel<br>
+        <input type="password" name="jelszo" size="20"><br>
+
+        Címke:<br>
+        <label>Címke szöveg:</label><br>
+        Választógombok<br>
+
+        Csak egy választási lehetőség: RadioButton<br>
+
+        <input type="radio" value="érték1" name="neve" checked>első <br>
+        <input type="radio" value="érték2" name="neve">második<br>
+        <input type="radio" value="érték3" name="neve">harmadik<br>
+
+        Jelölőnégyzet- több választási lehetőség: Jelölő négyzet-CheckBox<br>
+
+        első <input type="checkbox" name="neve1" value="ON"><br>
+        második <input type="checkbox" name="neve2" value="ON"><br>
+        harmadik <input type="checkbox" name="neve3" value="ON"><br>
+
+        <h3>Nyomógombok</h3>
+        <input type="button" name="szamol" value="Számolás"><br>
+        Küldés<br>
+        <input type="submit" value="Küldés" name="kuld"><br>
+        Alaphelyzet:<br>
+        <input type="reset" value="Alaphelyzet" name="alap"><br>
+
+        Legördülő menü<br>
+        <select name="lista" size="1">
+            <option select value="első">első</option>
+            <option select value="második">második</option>
+            <option select value="harmadik">harmadik</option>
+        </select><br>
+
+        Számbevitel mező:<br>
+        <input type="number" value="0" name="ertek" min="0" max="10"><br>
+
+        Gördítő sáv (csúszka):<br>
+        <input type="range" value="0" id="csuszkaertek" name="csuszka" min="1" max="50" oninput="ertek()"><br>
+        csúszkaérték(1-50): <span id="ertek"></span><br>
+
+        Dátum választó:<br>
+        <label>Válassz dátumot:</label>
+        <input type="date"><br>
+        <label> Add meg az időpontot:</label>
+        <input type="time">
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
